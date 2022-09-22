@@ -24,7 +24,6 @@ gem 'name_of_person', '~> 1.1'
 gem 'noticed', '~> 1.5'
 gem 'paper_trail', '~> 13.0'
 gem 'paranoia', '~> 2.6'
-gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.4'
 gem 'redis', '~> 4.0'
@@ -35,6 +34,7 @@ gem 'sassc-rails'
 gem 'simple_form', '~> 5.1'
 gem 'slim-rails', '~> 3.5'
 gem 'sprockets-rails'
+gem 'sqlite3'
 gem 'stimulus-rails'
 gem 'stripe', '~> 7.1'
 gem 'turbo-rails'
@@ -56,6 +56,9 @@ group :development, :test do
   gem 'brakeman'
   gem 'bundler-audit'
   gem 'ruby_audit'
+
+  # Database
+  gem 'pg', '~> 1.1'
 
   # Linting
   gem 'rubocop', '~> 1.36'

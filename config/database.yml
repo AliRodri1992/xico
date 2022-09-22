@@ -1,12 +1,14 @@
 default: &default
-  adapter: postgresql
-  encoding: utf-8
+  adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
 
 x-local_database: &x-local-database
+  adapter: postgresql
   username: postgres
   password: postgres
   host: localhost
+  encoding: utf-8
   port: 5432
 
 development:
@@ -16,8 +18,7 @@ development:
 
 test:
   <<: *default
-  database: xico_test
-  <<: *x-local-database
+  database: db/test.sqlite3
 
 production:
   <<: *default
