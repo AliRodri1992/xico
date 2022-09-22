@@ -8,6 +8,7 @@ AllCops:
   TargetRubyVersion: 3.1
   Exclude:
     - 'config/initializers/*'
+    - 'config/environments/*'
     - 'db/schema.rb'
     - 'lib/tasks/auto_annotate_models.rake'
     - '**/db/migrate/*'
