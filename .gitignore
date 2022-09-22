@@ -31,3 +31,10 @@
 /config/master.key
 
 .idea/
+log/
+
+tmp/
+
+storage/
+
+/config/credentials/production.key
