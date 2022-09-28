@@ -99,3 +99,5 @@ group :test do
   gem 'simplecov', '~> 0.21.2'
   gem 'webdrivers'
 end
+
+gem 'tailwindcss-rails', '~> 2.0'
