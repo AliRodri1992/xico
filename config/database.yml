@@ -5,8 +5,8 @@ default: &default
 
 x-local_database: &x-local-database
   adapter: postgresql
-  username: postgres
-  password: postgres
+  username: xico_user
+  password: x1c0p455w0rd
   host: localhost
   encoding: utf-8
   port: 5432
