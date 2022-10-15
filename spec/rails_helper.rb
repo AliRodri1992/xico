@@ -2,7 +2,7 @@
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
-require_relative "support/chrome"
+require_relative 'support/chrome'
 require_relative 'support/factory_bot'
 
 # Prevent database truncation if the environment is production
