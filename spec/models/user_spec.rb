@@ -19,10 +19,5 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  it 'orders by last name' do
-    lindeman = User.create!(email: 'andy@gmail.com', password: '123456')
-    chelimsky = User.create!(email: 'chelimsky@hotmail.com', password: '123456')
-
-    expect(User.email).to eq([chelimsky, lindeman])
-  end
+  pending "add some examples to (or delete) #{__FILE__}"
 end

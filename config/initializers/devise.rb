@@ -7,7 +7,7 @@
 # Devise change the default values for those options).
 class TurboFailureApp < Devise::FailureApp
   def respond
-    if request_format == turbo_stream
+    if request_format == :turbo_stream
       :redirect
     else
       super
@@ -15,7 +15,7 @@ class TurboFailureApp < Devise::FailureApp
   end
 
 def skip_format?
-  %w[html turbo_stream].include? request_format.to_us
+  %w[html turbo_stream].include? request_format.to_s
 end
 end
 # Use this hook to configure devise mailer, warden hooks and so forth.
